@@ -1,0 +1,3 @@
+[submodule "themes/folio"]
+	path = themes/folio
+	url = git@github.com:yetex1t/hexo-theme-folio.git
