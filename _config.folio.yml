@@ -1,0 +1,136 @@
+# ===========================================
+# ======== Folio Theme Configuration ========
+# ===========================================
+
+# Favicon path
+favicon: /img/favicon.png
+# Sidebar avatar path
+avatar: /img/profile.jpg
+# Sidebar short bio text
+author_bio: 'Coding is cheap, show me the idea.'
+
+# Copyright start year
+since: 2026
+
+# Blog index page path.
+# '/' => blog list at root, '/blog' => blog list at /blog/
+blog_path: /blog
+
+# Post URL template body.
+# Final permalink = blog_path + '/' + post_permalink.
+# Example with blog_path: /blog -> /blog/:year/:title/
+post_permalink: :year/:title/
+
+# Show/Hide footer "Powered by" line
+powered:
+  enable: false
+
+# Mainland China ICP / public security record info
+beian:
+  enable: false
+  icp: ''
+  police:
+    enable: false
+    number: ''
+
+# Top navigation menu
+menu:
+  - id: publications
+    name: Publications
+    url: /publications
+    enable: true
+  - id: projects
+    name: Projects
+    url: /projects
+    enable: true
+  - id: blog
+    name: Blog
+    url: /blog
+    enable: false
+  - id: archives
+    name: Archives
+    url: /archives
+    enable: false
+
+# Icon-only social links.
+# url can be a link (external or relative path) to navigate to,
+# or a non-URL value (e.g. QQ number, email) for click-to-copy.
+social:
+  enable: true
+social_links:
+  - id: github
+    icon: fab fa-github
+    url: https://github.com/yetex1t
+    enable: true
+  - id: twitter
+    icon: fab fa-twitter
+    url: https://x.com
+    enable: false
+  - id: facebook
+    icon: fab fa-facebook-square
+    url: https://www.facebook.com
+    enable: false
+  - id: qq
+    icon: fab fa-qq
+    url: 2399121950
+    enable: true
+  - id: weixin
+    icon: fab fa-weixin
+    url: null
+    enable: false
+  - id: weibo
+    icon: fab fa-weibo
+    url: https://weibo.com
+    enable: false
+  - id: email
+    icon: fas fa-envelope
+    url: yetex1t@outlook.com
+    enable: true
+  - id: rss
+    icon: fas fa-rss
+    url: null
+    enable: false
+
+# Text social links with labels.
+e_social:
+  enable: true
+e_social_links:
+  - id: location
+    name: Chengdu, China
+    url: null
+    icon: fas fa-map-marker-alt
+    enable: true
+  - id: google-scholar
+    name: Google Scholar
+    url: https://scholar.google.com/citations?user=SPcvNuEAAAAJ&hl
+    icon: fas fa-graduation-cap
+    enable: true
+  - id: orcid
+    name: ORCID
+    url: https://orcid.org/0009-0008-0399-9442
+    icon: fab fa-orcid
+    enable: true
+
+# CV download button
+cv_dl:
+  enable: false
+  dir: /attaches/theme-cv.pdf
+  description: My Detail CV.
+
+# Fallback image if avatar fails to load
+loading_bg:
+  flink: /img/theme-profile.png
+
+# Enable page/sidebar box shadow
+box_shadow:
+  enable: false
+
+# Theme assets (CSS/JS) loaded in <head>/<body>.
+# You can add/remove local files or CDN links.
+# Custom style file: source/css/user.styl
+CDN_USE:
+  css:
+    - /css/index.css
+    - https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css  # fontawesome 5
+  js:
+    - /js/main.js
